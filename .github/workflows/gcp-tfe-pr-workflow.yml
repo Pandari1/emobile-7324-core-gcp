@@ -39,6 +39,10 @@ jobs:
           workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
 
+        
+      - name: Set GCP Project
+        run: gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
