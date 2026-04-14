@@ -1,9 +1,9 @@
-project_id                    = "western-replica-476613-h8"
+project_id                    = "project-a76dae72-2dd3-4823-a3d"
 region                        = "asia-south1"
 prefix                        = "emobile-prod"
-github_organization           = "your-github-org"
-state_bucket_name             = "your-gcp-project-id-tf-state"
-core_allowed_branches         = ["main", "production"]
-compute_allowed_branches      = ["main", "production"]
+github_organization           = "https://github.com/Pandari1/emobile-7324-core-gcp"
+state_bucket_name             = "emobile-7324-tfstate-001"
+core_allowed_branches         = ["main", "production_7324"]
+compute_allowed_branches      = ["main", "production_7324"]
 workload_identity_pool_id     = "github-pool"
 workload_identity_provider_id = "github-provider"
