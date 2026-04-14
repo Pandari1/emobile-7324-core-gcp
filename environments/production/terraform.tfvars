@@ -1,4 +1,4 @@
-project_id                    = "your-gcp-project-id"
+project_id                    = "western-replica-476613-h8"
 region                        = "asia-south1"
 prefix                        = "emobile-prod"
 github_organization           = "your-github-org"
