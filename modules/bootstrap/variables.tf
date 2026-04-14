@@ -21,43 +21,36 @@ variable "github_organization" {
 variable "core_repository_name" {
   description = "Repository name for the core infrastructure repo."
   type        = string
-  default     = "emobile-7324-core-gcp"
 }
 
 variable "compute_repository_name" {
   description = "Repository name for the compute infrastructure repo."
   type        = string
-  default     = "emobile-7324-compute-gcp"
 }
 
 variable "core_allowed_branches" {
   description = "Branches in the core repo allowed to federate into GCP."
   type        = list(string)
-  default     = ["main", "production"]
 }
 
 variable "compute_allowed_branches" {
   description = "Branches in the compute repo allowed to federate into GCP."
   type        = list(string)
-  default     = ["main", "production"]
 }
 
 variable "workload_identity_pool_id" {
   description = "Workload Identity Pool ID."
   type        = string
-  default     = "github-pool"
 }
 
 variable "workload_identity_provider_id" {
   description = "Workload Identity Provider ID."
   type        = string
-  default     = "github-provider"
 }
 
 variable "create_state_bucket" {
   description = "Whether Terraform should create the remote state bucket."
   type        = bool
-  default     = true
 }
 
 variable "state_bucket_name" {
@@ -68,23 +61,4 @@ variable "state_bucket_name" {
 variable "bucket_location" {
   description = "Location for the Terraform state bucket."
   type        = string
-  default     = "ASIA-SOUTH1"
-}
-
-variable "subnet_cidr" {
-  description = "Primary subnet CIDR."
-  type        = string
-  default     = "10.10.0.0/20"
-}
-
-variable "pods_cidr" {
-  description = "Secondary CIDR used for GKE pods."
-  type        = string
-  default     = "10.20.0.0/16"
-}
-
-variable "services_cidr" {
-  description = "Secondary CIDR used for GKE services."
-  type        = string
-  default     = "10.30.0.0/20"
 }

@@ -1,0 +1,9 @@
+project_id                    = "your-gcp-project-id"
+region                        = "asia-south1"
+prefix                        = "emobile-prod"
+github_organization           = "your-github-org"
+state_bucket_name             = "your-gcp-project-id-tf-state"
+core_allowed_branches         = ["main", "production"]
+compute_allowed_branches      = ["main", "production"]
+workload_identity_pool_id     = "github-pool"
+workload_identity_provider_id = "github-provider"
